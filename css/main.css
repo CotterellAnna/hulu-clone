@@ -1,0 +1,510 @@
+@font-face {
+  font-family: 'Graphik', Helvetica, Arial, sans-serif;
+  src: url("../fonts/GraphikBold.otf") format("opentype") url("../fonts/GraphikBold.otf") format("opentype");
+}
+
+body {
+  margin: 0px;
+  font-family: 'Graphik', Helvetica, Arial, sans-serif;
+}
+
+@-webkit-keyframes move-up-and-down {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+}
+
+@keyframes move-up-and-down {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+}
+
+.main-container .hero-section {
+  background-image: url("../images/header.jpg");
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-container .hero-section header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.main-container .hero-section header .nav-login {
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 14px;
+  opacity: 1;
+  font-weight: 600;
+  margin: 20px;
+}
+
+.main-container .hero-section header .nav-login:hover {
+  cursor: pointer;
+}
+
+.main-container .hero-section .center-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 60px 0px 0px;
+  padding-bottom: 47px;
+}
+
+.main-container .hero-section .center-text h6 {
+  color: #00ED82;
+  font-weight: 600;
+}
+
+.main-container .hero-section .center-text img {
+  width: 268px;
+  height: 89px;
+}
+
+.main-container .hero-section .center-text h5 {
+  font-size: 22px;
+  color: white;
+  margin: 10px 0px;
+}
+
+.main-container .hero-section .center-text p {
+  color: white;
+  font-size: 16px;
+  margin: 20px 0px;
+}
+
+.main-container .hero-section .center-text p sup {
+  font-size: 5px;
+}
+
+.main-container .hero-section .center-text button {
+  background: white;
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  padding: 20px 32px;
+}
+
+.main-container .hero-section .center-text button a {
+  text-decoration: none;
+  color: black;
+}
+
+.main-container .hero-section .center-text .free-trial {
+  font-size: 10px;
+}
+
+.main-container .hero-section .ribbon {
+  background-image: linear-gradient(135deg, #231437 0%, #2c385e 80%, #336e6b 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px;
+}
+
+.main-container .hero-section .ribbon .logos {
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+}
+
+.main-container .hero-section .ribbon .logos img {
+  width: 236px;
+  height: 53px;
+}
+
+.main-container .hero-section .ribbon .ribbon-info {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 80px;
+}
+
+.main-container .hero-section .ribbon .ribbon-info h6 {
+  color: #00ED82;
+  font: 12px;
+  padding: 0px 0px 8px;
+  margin: 10px 0px;
+}
+
+.main-container .hero-section .ribbon .ribbon-info span {
+  color: white;
+  font-size: 24px;
+  margin: 10px 0px;
+}
+
+.main-container .hero-section .ribbon .ribbon-info a {
+  color: white;
+  font-size: 14px;
+}
+
+.main-container .hero-section .ribbon .ribbon-button {
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container .hero-section .ribbon .ribbon-button button {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  font-size: 14px;
+  padding: 20px 35px;
+  margin-bottom: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.main-container .hero-section .ribbon .ribbon-button a {
+  color: white;
+  font-size: 10px;
+}
+
+.main-container .section-two {
+  background: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  margin: 0px;
+}
+
+.main-container .section-two h5 {
+  color: #00ED82;
+  font-weight: 800;
+  font-size: 12px;
+  margin: 40px 0px 16px 0px;
+}
+
+.main-container .section-two h1 {
+  font-size: 48px;
+  font-weight: 1000;
+  margin: 0px 0px 16px;
+}
+
+.main-container .section-two p {
+  font-size: 16px;
+  margin: 16px 0px 40px 0px;
+  text-align: center;
+}
+
+.main-container .section-two .movie-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0px 20px;
+}
+
+.main-container .section-two .movie-cards .movie-card {
+  width: 294px;
+  height: 450px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 15px;
+}
+
+.main-container .section-two .movie-cards .movie-card h5 {
+  color: white;
+  font-size: 16px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding: 5px 0px 0px 10px;
+}
+
+.main-container .section-two .movie-cards .movie-card h3 {
+  font-size: 24px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  padding: 5px 0px 0px 10px;
+}
+
+.main-container .section-two .movie-cards .one {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 16, 16, 0.281))), url("../images/cover-1.jpg");
+  background: linear-gradient(rgba(17, 16, 16, 0.281)), url("../images/cover-1.jpg");
+}
+
+.main-container .section-two .movie-cards .two {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 16, 16, 0.281))), url("../images/cover-2.jpg");
+  background-image: linear-gradient(rgba(17, 16, 16, 0.281)), url("../images/cover-2.jpg");
+}
+
+.main-container .section-two .movie-cards .three {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 16, 16, 0.281))), url("../images/cover-3.jpg");
+  background-image: linear-gradient(rgba(17, 16, 16, 0.281)), url("../images/cover-3.jpg");
+}
+
+.main-container .section-two .movie-cards .four {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 16, 16, 0.281))), url("../images/cover-4.jpg");
+  background-image: linear-gradient(rgba(17, 16, 16, 0.281)), url("../images/cover-4.jpg");
+}
+
+.main-container .section-three {
+  background-color: #151516;
+  margin: 0px;
+  padding: 40px 18px;
+  color: white;
+}
+
+.main-container .section-three .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 5px solid #00ED82;
+  border-radius: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 40px 0px;
+}
+
+.main-container .section-three .content h5 {
+  font-size: 14px;
+  color: #00ED82;
+}
+
+.main-container .section-three .content h2 {
+  font-size: 64px;
+  margin: 5px 0px;
+}
+
+.main-container .section-three .content h3 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.main-container .section-three .content p {
+  font-size: 10px;
+}
+
+.main-container .section-three .content p a {
+  font-size: 10px;
+}
+
+.main-container .section-three .content a {
+  color: white;
+  font-size: 16px;
+}
+
+.main-container .section-three .content i {
+  margin: 20px 0px;
+  -webkit-animation: move-up-and-down 1s infinite alternate;
+          animation: move-up-and-down 1s infinite alternate;
+}
+
+.main-container .section-four {
+  background-image: url("../images/live-sports.jpg");
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 150px 200px 100px;
+  color: white;
+}
+
+.main-container .section-four .tab button {
+  font-size: 12px;
+  margin: 0px 37px 0px 0px;
+  padding: 10px 0px;
+  border: none;
+  background: transparent;
+  color: white;
+}
+
+.main-container .section-four .tab button:hover {
+  cursor: pointer;
+}
+
+.main-container .section-four .tab .live-sports {
+  border-bottom: 5px solid white;
+}
+
+.main-container .section-four h5 {
+  font-size: 62px;
+  margin: 10px 0px;
+}
+
+.main-container .section-four p {
+  font-size: 24px;
+}
+
+.main-container .section-four .logo-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 650px;
+}
+
+.main-container .section-four .logo-bar img {
+  width: 44px;
+  height: 25px;
+  border-radius: 50px;
+  background: white;
+  padding: 15px 5px;
+}
+
+.main-container .section-four .sub {
+  font-size: 10px;
+  margin: 40px 0px;
+}
+
+.main-container .section-four .sub a {
+  color: white;
+  font-size: 10px;
+}
+
+.main-container .plan-comparison {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  padding: 20px 50px;
+  color: #292C33;
+  text-align: center;
+}
+
+.main-container .plan-comparison .row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr 1fr 1fr;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+}
+
+.main-container .plan-comparison .row .plan-head {
+  text-align: center;
+}
+
+.main-container .plan-comparison .row .plan-head h3 {
+  font-size: 28px;
+}
+
+.main-container .plan-comparison .row .plan-head p {
+  font-size: 16px;
+}
+
+.main-container .plan-comparison .row .plan-head span {
+  background: #67728A;
+  color: white;
+  padding: 7px 18px 5px;
+  border: none;
+  border-radius: 50px;
+}
+
+.main-container .plan-comparison .row .plan-head h4 {
+  font-size: 18px;
+  padding: 8px 0px;
+  margin: 0px;
+}
+
+.main-container .plan-comparison .row .plan-head h5 {
+  color: #888888;
+  font-size: 14px;
+  padding: 0px 0px 4px;
+  margin: 0px;
+}
+
+.main-container .plan-comparison .row .plan-head button {
+  color: white;
+  background: #040505;
+  font-size: 14px;
+  padding: 10px 28px;
+  margin: 10px 0px;
+  border: none;
+}
+
+.main-container .plan-comparison .row .one {
+  text-align: left;
+}
+
+.main-container .plan-comparison .row img {
+  text-align: center;
+  padding-left: 110px;
+}
+/*# sourceMappingURL=main.css.map */
