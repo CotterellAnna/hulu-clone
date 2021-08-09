@@ -432,6 +432,7 @@ body{
         .hero-section{
             .center-text{
                 text-align: center;
+                padding-bottom: 90px;
                 img{
                     width: 145px;
                     height: 48px;
@@ -444,6 +445,7 @@ body{
                 text-align: center;
                 .logos{
                     flex: 1;
+                    padding-top: 20px;
                 }
                 .ribbon-info{
                     padding: 0px;
@@ -472,10 +474,11 @@ body{
             .movie-cards{
                 padding: 0px;
                 justify-content: space-around;
+                padding: 0px 15px;
                 .movie-card{
                     margin: 0px;
-                    width: 200px;
-                    height: 306px;
+                    width: 150px;
+                    height: 250px;
                     margin-bottom: 15px;
                 }
             }
@@ -551,7 +554,6 @@ body{
                         margin: 0px;
                         width: 330px;
                         h3{
-                            //width: fit-content;
                             margin: 0px;
                             text-align: center;
                         }
@@ -572,9 +574,8 @@ body{
                 .sub-row{
                     text-align: center;
                     img{
-                        padding-left: 40px;
+                        padding-left: 35px;
                         padding-bottom: 10px;
-                        padding-left: 50px;
                         width: 15px;
                     }
                     i{
@@ -620,7 +621,8 @@ body{
                     }
                 }
                 .base{
-                    flex-wrap: wrap;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;                    
                 }
             }
         }

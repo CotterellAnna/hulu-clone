@@ -629,6 +629,7 @@ body {
   }
   .main-container .hero-section .center-text {
     text-align: center;
+    padding-bottom: 90px;
   }
   .main-container .hero-section .center-text img {
     width: 145px;
@@ -649,6 +650,7 @@ body {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
+    padding-top: 20px;
   }
   .main-container .hero-section .ribbon .ribbon-info {
     padding: 0px;
@@ -679,11 +681,12 @@ body {
     padding: 0px;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    padding: 0px 15px;
   }
   .main-container .section-two .movie-cards .movie-card {
     margin: 0px;
-    width: 200px;
-    height: 306px;
+    width: 150px;
+    height: 250px;
     margin-bottom: 15px;
   }
   .main-container .section-three .content h5 {
@@ -801,9 +804,8 @@ body {
     text-align: center;
   }
   .main-container .plan-comparison .row .sub-row img {
-    padding-left: 40px;
+    padding-left: 35px;
     padding-bottom: 10px;
-    padding-left: 50px;
     width: 15px;
   }
   .main-container .plan-comparison .row .sub-row i {
@@ -845,8 +847,10 @@ body {
     height: 20px;
   }
   .main-container footer .footer-bottom .base {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
   }
 }
 /*# sourceMappingURL=main.css.map */
